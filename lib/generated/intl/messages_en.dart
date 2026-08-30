@@ -52,12 +52,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "deviceInfo": MessageLookupByLibrary.simpleMessage("Device Information"),
         "displayScreenPointer": MessageLookupByLibrary.simpleMessage("Show screen pointer"),
         "displayTouch": MessageLookupByLibrary.simpleMessage("Show touch feedback"),
-        "fixDeviceWithoutDataLocalPermission": MessageLookupByLibrary.simpleMessage("Work around devices that do not allow access to 
-/data/local/tmp"),
+        "fixDeviceWithoutDataLocalPermission": MessageLookupByLibrary.simpleMessage("Work around devices that do not allow access to \n/data/local/tmp"),
         "historyConnect": MessageLookupByLibrary.simpleMessage("Connection History"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "inputDeviceAddress": MessageLookupByLibrary.simpleMessage("Enter the target device IP address"),
-        "inputFormat": MessageLookupByLibrary.simpleMessage("Use the format "IP:PORT PAIRING_CODE""),
+        "inputFormat": MessageLookupByLibrary.simpleMessage("Use the format \"IP:PORT PAIRING_CODE\""),
         "installApk": MessageLookupByLibrary.simpleMessage("Install APK"),
         "installDes1": MessageLookupByLibrary.simpleMessage("We recommend /system/xbin because most built-in Android binaries are stored in /system/bin, making personal binaries easier to manage when they are installed separately."),
         "installDes2": MessageLookupByLibrary.simpleMessage("This feature does not support dynamic partitions yet"),
@@ -82,9 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "remoteAdbDebug": MessageLookupByLibrary.simpleMessage("Remote ADB Debugging"),
         "remoteDebuSwitchgDes": MessageLookupByLibrary.simpleMessage("Enable remote debugging without root"),
         "remoteDebugDes": MessageLookupByLibrary.simpleMessage("Remote"),
-        "scanQRCodeDes": MessageLookupByLibrary.simpleMessage("Tap to enlarge the QR code. It can only be scanned correctly by devices on the same local network.
-The QR code can be scanned by ADB Kit, compatible screen casting tools, or any web browser.
-You can also open the QR code URL directly in a browser to connect."),
+        "scanQRCodeDes": MessageLookupByLibrary.simpleMessage("Tap to enlarge the QR code. It can only be scanned correctly by devices on the same local network.\nThe QR code can be scanned by ADB Kit, compatible screen casting tools, or any web browser.\nYou can also open the QR code URL directly in a browser to connect."),
         "scanToConnect": MessageLookupByLibrary.simpleMessage("Scan to Connect"),
         "serverPath": MessageLookupByLibrary.simpleMessage("Server Path"),
         "setting": MessageLookupByLibrary.simpleMessage("Settings"),
