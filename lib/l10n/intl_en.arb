@@ -34,7 +34,7 @@
   "@debugPaintLayerBordersEnabled": {},
   "debugPaintPointersEnabled": "Highlight taps",
   "@debugPaintPointersEnabled": {},
-  "debugPaintSizeEnabled": "Show text baselines",
+  "debugPaintSizeEnabled": "Show widget size boxes",
   "@debugPaintSizeEnabled": {},
   "debugRepaintRainbowEnabled": "Show repaint regions",
   "@debugRepaintRainbowEnabled": {},

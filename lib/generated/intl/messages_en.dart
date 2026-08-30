@@ -44,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dashboard": MessageLookupByLibrary.simpleMessage("Dashboard"),
         "debugPaintLayerBordersEnabled": MessageLookupByLibrary.simpleMessage("Show layer boundaries"),
         "debugPaintPointersEnabled": MessageLookupByLibrary.simpleMessage("Highlight taps"),
-        "debugPaintSizeEnabled": MessageLookupByLibrary.simpleMessage("Show text baselines"),
+        "debugPaintSizeEnabled": MessageLookupByLibrary.simpleMessage("Show widget size boxes"),
         "debugRepaintRainbowEnabled": MessageLookupByLibrary.simpleMessage("Show repaint regions"),
         "debugShowMaterialGrid": MessageLookupByLibrary.simpleMessage("Show material grid"),
         "desktop": MessageLookupByLibrary.simpleMessage("Desktop"),
