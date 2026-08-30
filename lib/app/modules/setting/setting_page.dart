@@ -174,21 +174,21 @@ class _SettingsPageState extends State<SettingsPage> with WidgetsBindingObserver
                       SettingItem(
                         title: S.of(context).language,
                         suffix: SelectTab(
-                          value: configController.locale == ConfigController.english ? 1 : 0,
+                          value: configController.locale == ConfigController.chinese ? 1 : 0,
                           children: const [
-                            Text('中文'),
+                            Text('Chinese'),
                             Text('English'),
                           ],
                           onChanged: (value) {
                             if (value == 0) {
-                              Get.locale = ConfigController.chinese;
-                              configController.changeLocal(
-                                ConfigController.chinese,
-                              );
-                            } else {
                               Get.locale = ConfigController.english;
                               configController.changeLocal(
                                 ConfigController.english,
+                              );
+                            } else {
+                              Get.locale = ConfigController.chinese;
+                              configController.changeLocal(
+                                ConfigController.chinese,
                               );
                             }
                           },

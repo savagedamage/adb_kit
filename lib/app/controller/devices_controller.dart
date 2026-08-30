@@ -220,7 +220,7 @@ class DevicesController extends GetxController {
 
       if (!current.contains(devicesEntity)) {
         removeLock = Completer<bool>();
-        Log.v('需要删除devicesEntity ->$devicesEntity');
+        Log.v('Need to remove devicesEntity ->$devicesEntity');
         final int deleteIndex = devicesEntitys.indexOf(devicesEntity);
         Future.delayed(const Duration(milliseconds: 300), () {
           update();

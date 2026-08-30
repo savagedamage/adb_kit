@@ -1,1 +1,1 @@
-## 如何编写插件
+## How to write plugins

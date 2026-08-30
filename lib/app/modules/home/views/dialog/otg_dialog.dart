@@ -20,7 +20,7 @@ class OTGDialog extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '第一次连接该OTG设备，请在OTG设备上同意ADB调试...',
+                  'When connecting to this OTG device for the first time, please allow ADB debugging on the OTG device...',
                   style: TextStyle(
                     color: AppColors.fontColor,
                     fontWeight: bold,

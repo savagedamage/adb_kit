@@ -76,7 +76,7 @@ class _PushFileDialogState extends State<PushFileDialog> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      '上传 $currentFile 中...',
+                      'Uploading $currentFile...',
                       style: TextStyle(
                         color: AppColors.fontColor,
                         fontWeight: bold,

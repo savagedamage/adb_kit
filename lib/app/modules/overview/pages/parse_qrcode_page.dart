@@ -48,7 +48,7 @@ class _ParseQrcodePageState extends State<ParseQrcodePage> {
         entitys[i].state = ConnectState.success;
         setState(() {});
         Future.delayed(const Duration(milliseconds: 600), () {
-          showToast('已经成功发送连接消息');
+          showToast('Connection request sent successfully');
           Navigator.pop(context);
         });
         break;
@@ -102,11 +102,11 @@ class _ParseQrcodePageState extends State<ParseQrcodePage> {
                             );
                           }
                           if (element.state == ConnectState.wait) {
-                            return const Text('等待');
+                            return const Text('Waiting');
                           }
                           if (element.state == ConnectState.failed) {
                             return Text(
-                              '连接失败',
+                              'Connection failed',
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.error,
                               ),

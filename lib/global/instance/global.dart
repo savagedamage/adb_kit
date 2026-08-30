@@ -114,9 +114,9 @@ class Global {
               try {
                 await AdbUtil.connectDevices(address);
               } on ADBException catch (e) {
-                Log.e('通过UDP发现自动连接设备失败 : $e');
+                Log.e('Failed to auto-connect to a device discovered via UDP: $e');
               }
-              showToast('已自动连接$address');
+              showToast('Auto-connected to $address');
             }
           } catch (e) {
             Log.e('receiveBoardCast error : $e');
@@ -306,15 +306,15 @@ class Global {
     ConfigController controller = Get.put(ConfigController());
     FlutterView flutterView = window;
     PlatformDispatcher platformDispatcher = flutterView.platformDispatcher;
-    Log.i('当前系统语言 ${platformDispatcher.locales}');
-    Log.i('当前系统主题 ${platformDispatcher.platformBrightness}');
-    Log.i('当前布局风格 ${controller.screenType}');
-    Log.i('当前App内部主题 ${controller.theme!.brightness}');
+    Log.i('Current system locales ${platformDispatcher.locales}');
+    Log.i('Current system theme ${platformDispatcher.platformBrightness}');
+    Log.i('Current layout style ${controller.screenType}');
+    Log.i('Current in-app theme ${controller.theme!.brightness}');
     Log.i('physicalSize:${flutterView.physicalSize}');
     Log.i('devicePixelRatio:${flutterView.devicePixelRatio}');
     Log.i('Android DPI:${flutterView.devicePixelRatio * 160}');
     // Log.i('当前设备Root状态 ${await YanProcess().isRoot()}');
-    Log.i('是否自动连接局域网设备 ${controller.autoConnect}');
+    Log.i('Auto-connect LAN devices ${controller.autoConnect}');
     WidgetsBinding.instance!.addObserver(Listener());
     isInit = true;
     if (controller.autoConnect) {

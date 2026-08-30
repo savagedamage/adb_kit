@@ -68,7 +68,7 @@ Future<void> runADBClient({Color? primary}) async {
       runApp(const MaterialAppWrapper());
     },
     (error, stackTrace) {
-      Log.e('未捕捉到的异常 : $error \n$stackTrace');
+      Log.e('Uncaught exception: $error\n$stackTrace');
     },
     zoneSpecification: ZoneSpecification(
       print: (Zone self, ZoneDelegate parent, Zone zone, String line) {
@@ -79,7 +79,7 @@ Future<void> runADBClient({Color? primary}) async {
   );
   FlutterError.onError = (FlutterErrorDetails details) {
     FlutterError.presentError(details);
-    Log.e('页面构建异常 : ${details.exception}');
+    Log.e('Widget build exception: ${details.exception}');
   };
   StatusBarUtil.transparent();
 }

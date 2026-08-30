@@ -235,7 +235,7 @@ class _AdbInstallToSystemPageState extends State<AdbInstallToSystemPage> {
                         height: 48.w,
                         child: Center(
                           child: Text(
-                            '安装',
+                            'Install',
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: bold,

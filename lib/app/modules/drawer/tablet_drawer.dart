@@ -113,7 +113,7 @@ class _TabletDrawerState extends State<TabletDrawer> {
               },
               child: TabletDrawerItem(
                 groupValue: widget.groupValue,
-                title: '切换主题',
+                title: 'Switch Theme',
                 iconData: Theme.of(context).brightness == Brightness.dark ? Icons.light_mode : Icons.dark_mode,
               ),
             ),

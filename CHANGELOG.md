@@ -1,248 +1,237 @@
 ## 1.5.5
-- 优化桌面端的UI，例如进入对应设备，左上角不再有返回键，避免点击黑屏
-- 修复移动端设备详情页面按钮错乱的问题
-- 其他UI优化，文字大小，输入框大小等
+- Improved the desktop UI. For example, after entering a device page on desktop, the back button is no longer shown in the upper-left corner to avoid black screens caused by accidental taps.
+- Fixed misaligned buttons on the mobile device details page.
+- Other UI improvements, including text size and input field sizing.
 
-[其他更新]
-- Flutter依赖升级至3.22.0，一些三方库的更新
+[Other updates]
+- Upgraded Flutter dependencies to 3.22.0 and updated several third-party packages.
 
-下个版本会尝试内置版本检测，在没有处理好软著前，大家统一到官网更新(点击关于->其他版本下载即可)
-
+The next version will try to include built-in update detection. Until the software copyright process is ready, please keep updating from the official website (About -> Download Other Versions).
 
 ## 1.5.4
-- 优化多个UI界面对夜间模式的适配:历史记录、终端界面
-- 修复桌面端切换主题灰屏的问题
+- Improved dark mode support across several UI pages, including History and Terminal.
+- Fixed the gray screen issue when switching themes on desktop.
 
 ## 1.5.3
-- 修复启动卡死、崩溃等问题
-- 修复关于页面资源图片加载失败，官网跳转失败的问题
-- 修复部分设备布局适配到平板的问题
-- 移除未使用权限，发送短信、彩信、拨打电话等
-- 修复域名过期导致无法登录的问题
+- Fixed startup freezes, crashes, and related issues.
+- Fixed failures when loading resource images on the About page and opening the official website.
+- Fixed layout adaptation issues that caused some devices to be treated as tablets.
+- Removed unused permissions such as SMS, MMS, and phone calls.
+- Fixed the issue where an expired domain prevented login.
 
 ## 1.5.2
-- 修复屏幕适配问题
-- 修复终端下方按钮无反应的问题
-- 终端命令支持参数提示(测试)
+- Fixed screen adaptation issues.
+- Fixed the issue where the buttons below the terminal did not respond.
+- Added parameter suggestions for terminal commands (test).
 
 ## 1.5.1-beta
-- 优化关于界面，增加开源地址跳转
-- 新的App Logo(created by midjourney)
-- 集成了登录，目前是用的速享数据库
-- 修复应用列表加载失败的问题
+- Improved the About page and added a link to the open-source repository.
+- New app logo (created by Midjourney).
+- Integrated login using the Suxiang database.
+- Fixed the issue where the app list failed to load.
 
 ## 1.5.0
-重要更新:
-支持无 root 通过 otg 调试另一台安卓设备，并可以有完整 adb 的支持
+Important update:
+Supports debugging another Android device through OTG without root, with full ADB support.
 
-其他更新:
-- 完善部分国际化的支持
-- 更新 adb 版本
+Other updates:
+- Improved support for internationalization.
+- Updated the bundled ADB version.
 
 ## 1.4.0
-- 修复应用管理界面加载失败的问题
-- 修复终端管理器界面点击重启服务失败的问题
-- 增加进程管理(目前只可浏览)
-- 修复终端模拟器页面无法正常重启服务的问题(没有替换adb为libadb.so)(nxdsupport反馈)
-- 修复文件选择平铺模式无法选择的问题(nxdsupport反馈)
-- 同步各种依赖库到最新 
-- 局域网设备搜索初版开发完成
-- 修复设备无法断开连接的问题(Android)
+- Fixed the issue where the app management page failed to load.
+- Fixed the issue where restarting the service from the terminal manager page failed.
+- Added process management (currently view-only).
+- Fixed the issue where the terminal emulator page could not restart the service correctly (ADB was not replaced with libadb.so) (reported by nxdsupport).
+- Fixed the issue where files could not be selected in tiled view mode (reported by nxdsupport).
+- Updated a variety of dependencies to the latest versions.
+- Completed the first version of LAN device discovery.
+- Fixed the issue where devices could not be disconnected on Android.
 
 ## 1.3.9
-- 修复 adb dex server在安卓12启动失败的问题
-- 优化日志显示
-- 修复无法加载 Android13 图标的bug
-- Flutter框架引擎升级到3.7.1
+- Fixed the issue where the ADB dex server failed to start on Android 12.
+- Improved log display.
+- Fixed the bug where Android 13 icons could not be loaded.
+- Upgraded the Flutter engine to 3.7.1.
 
 ## 1.3.8-1
-- 修复设备激活Shizuku提示权限不足的问题
+- Fixed the issue where activating Shizuku on a device reported insufficient permissions.
 
 ## 1.3.8
-- 修复windows查询设备只剩一个的问题
+- Fixed the issue where Windows device queries only showed one device.
 
 ## 1.3.7
-- 修复文件无法选择的bug
-- 优化手机端横屏布局
+- Fixed the bug where files could not be selected.
+- Improved landscape layout on phones.
 
 ## 1.3.6
-- 修复安卓端设备终端启动失败的问题
-- 修复安卓端上传文件失败的问题
-- 将安卓依赖迁移到so文件夹
+- Fixed the issue where the device terminal failed to start on Android.
+- Fixed the issue where file upload failed on Android.
+- Moved Android dependencies into the `so` folder.
 
 ## 1.3.5
-- 补充隐私政策
+- Added the privacy policy.
 
 ## 1.3.4
-### 修复
-- 进入设备信息页面再离开会出现异常卡顿的问题
-- 任务管理页面卡顿的问题
-- 支持Windows终端
-- 修复扫码界面黑屏的问题
-
+### Fixes
+- Fixed the issue where entering and leaving the device information page caused stuttering.
+- Fixed lag on the task manager page.
+- Added Windows terminal support.
+- Fixed the black screen issue on the QR scanning page.
 
 ## 1.3.3
-### 修复
+### Fixes
+- Fixed the issue where the app list display did not match correctly.
+- Fixed high CPU usage on Windows.
+- Fixed the bug where apps on other devices could not be launched.
+- Fixed several issues on the app management page.
 
-- 修复应用列表显示不匹配的问题
-- 修复Windows CPU占用过高的问题
-- 修复无法启动其他设备应用的bug
-- 修复应用管理页面部分问题
+### Added
+- Added the task manager feature.
+- Added device overview browsing (test).
+- Added blurred background support.
+- Added quick app launching.
 
-### 新增
-
-- 新增任务管理功能
-- 新增设备概况查看功能(测试)
-- 支持模糊背景效果
-- 新增应用快速启动
-
-### 优化
-
-- 优化UI
+### Improvements
+- Improved the UI.
 
 ## 1.3.2
-- [优化]完善了多语言支持
-- [新增]日志页面支持等级过滤功能
-- [新增]PC端支持背景透明效果
-- [优化]性能优化
-- [优化]应用管理稳定性优化
-UI还在调，先更一个版本体验体验
+- [Improved] Completed more multi-language support.
+- [Added] Added log level filtering on the logs page.
+- [Added] Added transparent background support on PC.
+- [Improved] Performance improvements.
+- [Improved] Stability improvements for the app manager.
+The UI is still being polished, so this version is mainly for trying out the experience.
 
 ## 1.3.1
-- [修复]修复侧栏展开按钮消失的bug
-- [优化]开启远程调试页面增加一些提示
-- [优化]优化日志页面过滤日志规则
-- [新增]新增软件更新日志查看页面
+- [Fixed] Fixed the bug where the sidebar expand button disappeared.
+- [Improved] Added more guidance to the remote debugging page.
+- [Improved] Improved log filtering rules on the logs page.
+- [Added] Added a page for viewing the software changelog.
 
 ## 1.3.0
-- [优化]UI大更新
-- [修复]修复二维码扫描、文件上传、软件安装的bug
-- [优化]减少应用获取失败的几率
-- [新增]新增语言切换、主题切换等功能，但还未完全适配，耐心等待后面更新。
+- [Improved] Major UI refresh.
+- [Fixed] Fixed bugs in QR scanning, file upload, and app installation.
+- [Improved] Reduced the chance of app fetch failures.
+- [Added] Added language switching, theme switching, and similar features, but they are not fully adapted yet. Please wait for later updates.
 
 ## 1.2.9
-- [修复]在部分设备上获取图标失败的bug
-- [新增]安卓端新增设置服务端路径功能
-- [改动]移除设备发现面板
-- [新增]发现局域网设备自动连接
-- [修复]部分设备无法启动ADB的bug
+- [Fixed] Fixed the bug where icons failed to load on some devices.
+- [Added] Added the ability to set the server path on Android.
+- [Changed] Removed the device discovery panel.
+- [Added] Automatically discovered and connected LAN devices.
+- [Fixed] Fixed the bug where ADB could not be started on some devices.
 
 ## 1.2.8
-- [修复] macOS 桌面端退出会无响应的bug
-- [重构] 桌面端拖拽文件的方案由 native_shell 替换为 desktop_drop
+- [Fixed] Fixed the bug where quitting the macOS desktop app became unresponsive.
+- [Refactor] Replaced `native_shell` with `desktop_drop` for desktop drag-and-drop files.
 
 ## 1.2.7
-- [优化]提升获取其他设备的图标速度
-- [修复]图标未全部获取也能使用launcher
-- [修复]修复图标错乱的bug
-- [优化]支持获取小米10s/小米平板5类的设备名称
-- [优化]减少server的体积
+- [Improved] Improved the speed of fetching icons from other devices.
+- [Fixed] Launcher can now be used before all icons finish loading.
+- [Fixed] Fixed the icon mismatch bug.
+- [Improved] Added support for device names such as Xiaomi 10s and Xiaomi Pad 5.
+- [Improved] Reduced the size of the server.
 
 ## 1.2.6
-- [改动]切换adb二进制为自编译版本(因为ndk-adb这个库的adb首次启动很慢，并且不能支持`adb pair ip:port code`)
-- [优化]死循环申请USB权限的问题
-- [优化]应用管理器和桌面启动器
-- [优化]历史IP保存功能和页面
-- [新增]支持当局域网设备离线同步到显示列表
+- [Changed] Switched the ADB binary to a self-compiled build (because the `ndk-adb` version starts very slowly and cannot support `adb pair ip:port code`).
+- [Improved] Fixed the repeated USB permission request loop.
+- [Improved] Improved the app manager and desktop launcher.
+- [Improved] Improved history IP saving and the related page.
+- [Added] Added support for keeping offline LAN devices visible in the list.
 
 ## 1.2.5
-- [改动]切换adb二进制，试用一个版本
-- [修复]一些已知的bug
-- [优化]日志页面
+- [Changed] Switched the ADB binary again for a trial release.
+- [Fixed] Fixed several known bugs.
+- [Improved] Improved the logs page.
 
 ## 1.2.4
-- 修复选择app端口占用的bug
-- 修复无线设备看不到设备名称的bug
-- 修复otg连接设备不能开关远程调试的bug
+- Fixed the bug where selecting the app port caused conflicts.
+- Fixed the bug where wireless devices did not show device names.
+- Fixed the bug where OTG-connected devices could not toggle remote debugging.
 
 ## 1.2.3
-- 支持选择本机app
+- Added support for selecting the local app.
+
 ## 1.2.2
-- 修复OTG异常的BUG
+- Fixed OTG-related bugs.
 
 ## 1.2.1
-- 完善了OTG实现安卓to安卓的功能，目前基本开关，push文件，安装apk均可用
+- Improved the OTG-based Android-to-Android implementation. Basic switches, file push, and APK installation now work.
 
-但是不建议上传过大的文件，这个最终受到安卓设备对外写入的速度限制
-简单说，绕过root实现安卓调试安卓，是通过安卓的串口读写功能实现的，而这个功能非常慢，查了很多资料还是无解
-可以尝试OTG打开USB无线调试，再通过局域网无线调试连接设备，再使用上传、apk安装功能
+However, uploading very large files is still not recommended because it is ultimately limited by Android's external write speed.
+In short, bypassing root to let one Android device debug another relies on Android serial read/write behavior, and this is very slow. After researching many approaches, there is still no good workaround.
+You can try using OTG to enable USB wireless debugging first, then connect to the device again over LAN wireless debugging, and then use file upload and APK installation.
+
 ## 1.2.0
-- UI 优化
-- 增加免ROOT对OTG的支持
+- UI improvements.
+- Added OTG support without root.
+
 ## 1.1.3
-- 优化扫码页面
-- 整体UI调整
-- 修复各种连接失败的问题
-- adb切换为自编译版本
-- Adb 应用管理（还在大量测试中）
-- UI优化，适配平板（UI的确是花了老多时间优化了，虽然还是很丑）
+- Improved the QR scanning page.
+- Adjusted the overall UI.
+- Fixed a variety of connection failures.
+- Switched ADB to a self-compiled build.
+- Added ADB app management (still under heavy testing).
+- Improved the UI and tablet adaptation (this took a lot of time even though it is still not pretty).
+
 ## 1.1.2
-- 修复缺少adb的问题
+- Fixed the missing ADB issue.
 
 ## 1.1.1
-- 整体优化
-- 修复PC响应式布局的问题
-- 提高设备发现的速度
+- Overall optimizations.
+- Fixed responsive layout issues on PC.
+- Improved device discovery speed.
 
 ## 1.1.0
-
-- 添加访问URL就能连接的功能
-- UI调整
+- Added URL-based connection support.
+- UI adjustments.
 
 ## 1.0.9
-
-- 修改了图标
-- 修复了扫码连接不保存历史的问题
-- 调整终端的背景颜色
-- 终端性能提升
+- Updated the icon.
+- Fixed the issue where QR-code connections were not saved to history.
+- Adjusted the terminal background color.
+- Improved terminal performance.
 
 ## 1.0.8
+A new version is here. Happy May Day! If you have suggestions, feel free to contact me through any channel.
 
-新版来啦，大家五一节日快乐，有建议可以通过任何方式与我沟通哦。
-
-- 增加端口的设定
-- 整体UI优化
-- 增加历史记录功能
-- 优化扫码连接
+- Added port configuration.
+- Overall UI improvements.
+- Added history support.
+- Improved QR-code connections.
 
 ## 1.0.7
-
-- 修复非局域网下无法打开二维码的问题
-- 修复 macOS 无法复制adb key的问题
-- UI调整
-- 优化检测同局域网的其他设备对运行adb工具的检测
+- Fixed the issue where the QR code could not be opened outside a LAN.
+- Fixed the issue where adb keys could not be copied on macOS.
+- UI adjustments.
+- Improved detection of other devices on the same LAN that are running the ADB tool.
 
 ## 1.0.6
-
-- 终端改为标准终端
-- 优化“安装ADB到系统”功能
-- 优化横屏模式
-- 添加复制adb key功能
-- 添加udp互连
-这个版本的adb文件互传等功能还没实现，没时间了。
+- Switched the terminal to a standard terminal.
+- Improved the “Install ADB to System” feature.
+- Improved landscape mode.
+- Added support for copying the adb key.
+- Added UDP interconnection.
+This version still does not implement file transfer between ADB instances yet because there was not enough time.
 
 ## 1.0.5
-
-- 静态集成adb
-- 优化侧栏显示
+- Statically bundled ADB.
+- Improved sidebar presentation.
 
 ## 1.0.4
-
-- 修复下载失败的问题
+- Fixed download failures.
 
 ## 1.0.3
-
-服务器ssl欠费了，临时改为http协议
-- 修复下载失败的问题
+The server SSL certificate expired, so HTTP is used temporarily.
+- Fixed download failures.
 
 ## 1.0.2
-
-- 优化官网
-- 优化执行自定义命令界面
+- Improved the official website.
+- Improved the custom command execution page.
 
 ## 1.0.1
-
-- 修复一些bug
-- macos版本在官网中可以下载了
+- Fixed several bugs.
+- The macOS version can now be downloaded from the official website.
 
 ## 1.0.0

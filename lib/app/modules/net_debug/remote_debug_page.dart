@@ -126,7 +126,7 @@ class _RemoteDebugPageState extends State<RemoteDebugPage> {
                           await Clipboard.setData(ClipboardData(
                             text: address.join('\n'),
                           ));
-                          showToast('IP已复制');
+                          showToast('IP copied');
                         },
                         borderRadius: BorderRadius.circular(12.w),
                         child: Text(
@@ -208,7 +208,7 @@ class _RemoteDebugPageState extends State<RemoteDebugPage> {
                                 ),
                               ),
                               const TextSpan(
-                                text: '    \$IP代表的是本机IP',
+                                text: '    \$IP is this device's IP address',
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.w500,

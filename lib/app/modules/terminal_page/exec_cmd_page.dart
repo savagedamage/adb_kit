@@ -93,7 +93,7 @@ class _ExecCmdPageState extends State<ExecCmdPage> {
                   child: Row(
                     children: [
                       ItemButton(
-                        title: '开启服务',
+                        title: 'Start Server',
                         onTap: () async {
                           String cmd = '$adb start-server\r';
                           Global().pty!.writeString(cmd);
@@ -101,7 +101,7 @@ class _ExecCmdPageState extends State<ExecCmdPage> {
                         },
                       ),
                       ItemButton(
-                        title: '停止服务',
+                        title: 'Stop Server',
                         onTap: () async {
                           String cmd = '$adb kill-server\r';
                           Global().pty!.writeString(cmd);
@@ -111,14 +111,14 @@ class _ExecCmdPageState extends State<ExecCmdPage> {
                         },
                       ),
                       ItemButton(
-                        title: '重启服务',
+                        title: 'Restart Server',
                         onTap: () async {
                           String cmd = '$adb kill-server && $adb start-server\r';
                           Global().pty!.writeString(cmd);
                         },
                       ),
                       ItemButton(
-                        title: '复制ADB KEY',
+                        title: 'Copy ADB Key',
                         onTap: () async {
                           String? homePath = '';
                           if (Platform.isMacOS) {
@@ -135,9 +135,9 @@ class _ExecCmdPageState extends State<ExecCmdPage> {
                                 text: adbKey.readAsStringSync(),
                               ),
                             );
-                            showToast('已复制');
+                            showToast('Copied');
                           } else {
-                            showToast('未发现adb key');
+                            showToast('ADB key not found');
                           }
                         },
                       ),

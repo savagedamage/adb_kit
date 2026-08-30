@@ -62,7 +62,7 @@ class _InstallApkDialogState extends State<InstallApkDialog> {
       // showToast('$name 已上传');
     }
     if (stringBuffer.isNotEmpty) {
-      showToast('安装Apk错误输出\n:${stringBuffer.toString().trim()}', duration: const Duration(milliseconds: 5000));
+      showToast('APK install error output\n:${stringBuffer.toString().trim()}', duration: const Duration(milliseconds: 5000));
     }
     // ignore: use_build_context_synchronously
     Navigator.of(context).pop();
@@ -84,7 +84,7 @@ class _InstallApkDialogState extends State<InstallApkDialog> {
                 Row(
                   children: [
                     Text(
-                      '安装 $currentFile 中...',
+                      'Installing $currentFile...',
                       style: TextStyle(
                         color: AppColors.fontColor,
                         fontWeight: bold,

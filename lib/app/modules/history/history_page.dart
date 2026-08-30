@@ -35,7 +35,7 @@ class HistoryPage extends GetView<HistoryController> {
           if (controller.adbHistorys.data.isEmpty) {
             return Center(
               child: Text(
-                '这里就像开发者的钱包一样，什么也没有',
+                'Nothing is here yet.',
                 style: TextStyle(
                   color: AppColors.fontDetail,
                 ),
@@ -76,7 +76,7 @@ class HistoryPage extends GetView<HistoryController> {
                         borderRadius: BorderRadius.circular(10.w),
                       ),
                       child: Text(
-                        '左右滑动对应的历史可以删除',
+                        'Swipe left or right on a history item to delete it.',
                         style: TextStyle(
                           color: Colors.green,
                           fontSize: 12.w,
