@@ -176,8 +176,8 @@ class _SettingsPageState extends State<SettingsPage> with WidgetsBindingObserver
                         suffix: SelectTab(
                           value: configController.locale == ConfigController.chinese ? 1 : 0,
                           children: const [
-                            Text('Chinese'),
                             Text('English'),
+                            Text('Chinese'),
                           ],
                           onChanged: (value) {
                             if (value == 0) {

@@ -208,7 +208,7 @@ class _RemoteDebugPageState extends State<RemoteDebugPage> {
                                 ),
                               ),
                               const TextSpan(
-                                text: '    \$IP is this device's IP address',
+                                text: '    \$IP is this device\'s IP address',
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.w500,
