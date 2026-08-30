@@ -62,7 +62,7 @@ class _InstallApkDialogState extends State<InstallApkDialog> {
       // showToast('$name 已上传');
     }
     if (stringBuffer.isNotEmpty) {
-      showToast('APK install error output\n:${stringBuffer.toString().trim()}', duration: const Duration(milliseconds: 5000));
+      showToast('APK install error output:\n${stringBuffer.toString().trim()}', duration: const Duration(milliseconds: 5000));
     }
     // ignore: use_build_context_synchronously
     Navigator.of(context).pop();

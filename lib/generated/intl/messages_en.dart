@@ -84,7 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "scanQRCodeDes": MessageLookupByLibrary.simpleMessage("Tap to enlarge the QR code. It can only be scanned correctly by devices on the same local network.\nThe QR code can be scanned by ADB Kit, compatible screen casting tools, or any web browser.\nYou can also open the QR code URL directly in a browser to connect."),
         "scanToConnect": MessageLookupByLibrary.simpleMessage("Scan to Connect"),
         "serverPath": MessageLookupByLibrary.simpleMessage("Server Path"),
-        "setting": MessageLookupByLibrary.simpleMessage("Settings"),
+        "setting": MessageLookupByLibrary.simpleMessage("Setting"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "showLayoutboundary": MessageLookupByLibrary.simpleMessage("Show layout boundaries"),
         "showPerformanceOverlay": MessageLookupByLibrary.simpleMessage("Show performance overlay"),
