@@ -54,7 +54,7 @@ class _SearchIpPageState extends State<SearchIpPage> {
     AppBar? appBar;
     if (Responsive.of(context)!.screenType == ScreenType.phone) {
       appBar = AppBar(
-        title: const Text('IP查看'),
+        title: const Text('IP Viewer'),
         systemOverlayStyle: OverlayStyle.dark,
         leading: controller.needShowMenuButton
             ? IconButton(
@@ -87,7 +87,7 @@ class _SearchIpPageState extends State<SearchIpPage> {
                   InkWell(
                     onTap: () async {
                       await Clipboard.setData(ClipboardData(text: ip));
-                      showToast('IP已复制');
+                      showToast('IP copied');
                     },
                     child: SizedBox(
                       height: Dimens.gap_dp48,
@@ -113,7 +113,7 @@ class _SearchIpPageState extends State<SearchIpPage> {
                       borderRadius: BorderRadius.circular(10.w),
                     ),
                     child: Text(
-                      '该页面列表的是能与本机互通的IP，末尾为.1结尾的通常代表路由器的IP地址，其余的代表连接到本机的IP地址',
+                      'This page lists the IP addresses that can communicate with this device. Addresses ending in .1 usually belong to the router, while the others are addresses connected to this device.',
                       style: TextStyle(
                         color: Colors.green,
                         fontSize: 12.w,

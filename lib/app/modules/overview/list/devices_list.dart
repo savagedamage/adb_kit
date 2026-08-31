@@ -87,7 +87,7 @@ class _DevicesListState extends State<DevicesList> {
                             width: 8.w,
                           ),
                           Text(
-                            'ADB启动中',
+                            'Starting ADB',
                             style: TextStyle(
                               fontWeight: bold,
                               color: Theme.of(context).colorScheme.onSurface,

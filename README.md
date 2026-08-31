@@ -1,51 +1,51 @@
-# ADB Toolbox
+# ADB Toolkit
 
-![release](https://img.shields.io/github/v/release/nightmare-space/adb_tool) 
+![release](https://img.shields.io/github/v/release/nightmare-space/adb_tool)
 [![Last Commits](https://img.shields.io/github/last-commit/nightmare-space/adb_tool?logo=git&logoColor=white)](https://github.com/nightmare-space/adb_tool/commits/master)
 [![Pull Requests](https://img.shields.io/github/issues-pr/nightmare-space/adb_tool?logo=github&logoColor=white)](https://github.com/nightmare-space/adb_tool/pulls)
 [![Code size](https://img.shields.io/github/languages/code-size/nightmare-space/adb_tool?logo=github&logoColor=white)](https://github.com/nightmare-space/adb_tool)
 [![License](https://img.shields.io/github/license/nightmare-space/adb_tool?logo=open-source-initiative&logoColor=green)](https://github.com/nightmare-space/adb_tool/blob/master/LICENSE)
- ![Platform](https://img.shields.io/badge/support%20platform-android%20%7C%20web%20%7C%20windows%20%7C%20macos%20%7C%20linux-green) ![download time](https://img.shields.io/github/downloads/nightmare-space/adb_tool/total) ![open issues](https://img.shields.io/github/issues/nightmare-space/adb_tool) ![fork](https://img.shields.io/github/forks/nightmare-space/adb_tool?style=social) ![code line](https://img.shields.io/tokei/lines/github/nightmare-space/adb_tool) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f969750dc4aa424ead664219ddcf321d)](https://app.codacy.com/gh/nightmare-space/adb_tool?utm_source=github.com&utm_medium=referral&utm_content=nightmare-space/adb_tool&utm_campaign=Badge_Grade)
- 
-This is an ADB client tool based on ADB. It supports Windows, macOS, Linux, and Android, making the features of the adb command line easier to use, and also providing features that the adb command line cannot use directly — such as app management and a desktop launcher.
+![Platform](https://img.shields.io/badge/support%20platform-android%20%7C%20web%20%7C%20windows%20%7C%20macos%20%7C%20linux-green) ![download time](https://img.shields.io/github/downloads/nightmare-space/adb_tool/total) ![open issues](https://img.shields.io/github/issues/nightmare-space/adb_tool) ![fork](https://img.shields.io/github/forks/nightmare-space/adb_tool?style=social) ![code line](https://img.shields.io/tokei/lines/github/nightmare-space/adb_tool) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f969750dc4aa424ead664219ddcf321d)](https://app.codacy.com/gh/nightmare-space/adb_tool?utm_source=github.com&utm_medium=referral&utm_content=nightmare-space/adb_tool&utm_campaign=Badge_Grade)
 
-ADB Toolbox can be used to improve the development efficiency of Android developers, or to give power-user geeks more powerful functionality.
+ADB Toolkit is an ADB client built on top of ADB. It supports Windows, macOS, Linux, and Android, making ADB features easier to use while also exposing capabilities that are inconvenient or impossible to use directly from the command line, such as app management and a desktop launcher.
 
-It also offers Android devices a fast way to run ADB locally — through this client we can quickly achieve Android OTG Android and use adb's functionality.
+ADB Toolkit helps Android developers work more efficiently and gives power users a richer toolbox.
 
-The simple adb executable is actually far more powerful than we imagine: the adb shell command can obtain very high privileges on an Android device, and can directly obtain some permissions that would otherwise require dynamic runtime requests.
+It also provides a fast way to run ADB locally on Android devices, including Android-to-Android OTG usage.
 
-But adb remains a command-line tool, so we cannot quickly and conveniently use each of its features — which is one of the reasons this ADB client tool exists.
+The simple `adb` executable is more powerful than many people expect. `adb shell` can access a high level of privilege on Android devices, and some permissions that normally require runtime approval can be reached directly through ADB.
 
-## Note!!!
+ADB is still a command-line tool, though, and that makes many features less convenient to use quickly. That is one of the main reasons this client exists.
 
-This repository is still under heavy development and maintenance, but due to ordinary work commitments there is not much free time, and the related screenshots and so on have not yet been updated. Sorry!!!
+## Notes
 
-**If it fails to build, please contact the email or QQ listed on GitHub.**
+This repository is still under active development and maintenance. Because this is maintained alongside regular work, some screenshots and supporting materials may not always be fully up to date.
+
+**If the project does not compile for you, please contact the email address or QQ account listed on GitHub.**
 
 ## Download
-- [Personal server](http://nightmare.press/YanTool/resources/ADBTool/?C=N;O=A)
+- [Personal server mirror](http://nightmare.press/YanTool/resources/ADBTool/?C=N;O=A)
 
 ## Screenshots
 
 <img src="screenshot/main/screen.png" width="100%" height="100%" />
 <img src="screenshot/main/pad.png" width="100%" />
 
-## Feature list
+## Feature List
 - Extensible
-- Quick management of multi-device debugging
-- Fast device connection via QR scan, LAN discovery, and more
-- Quick upload and app installation
-- Enable ADB on a device without root
+- Quickly manage debugging across multiple devices
+- Fast device connection through QR scanning and LAN discovery
+- Fast file upload and APK installation
+- Enable ADB on devices without root
 - Connect one Android device to another without root
-- Install ADB to the system
-- History
+- Install ADB into the system
+- Connection history
 - App manager and desktop launcher
-- Quick launch
-   - scene
-   - 黑域 (Brevent)
-   - 冰箱 (Ice Box)
-   - shizuku
+- Quick launch support for:
+  - Scene
+  - Brevent
+  - Ice Box
+  - Shizuku
 
 ## Git History
 
@@ -83,5 +83,4 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 ```

@@ -18,7 +18,7 @@ class AppManagerPlugin extends Pluggable {
   }
 
   @override
-  String get displayName => '桌面启动';
+  String get displayName => 'Desktop Launcher';
 
   @override
   ImageProvider<Object> get iconImageProvider => throw UnimplementedError();

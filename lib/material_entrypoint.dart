@@ -86,7 +86,7 @@ class _MaterialAppWrapperState extends State<MaterialAppWrapper> with WidgetsBin
                 debugShowMaterialGrid: config.debugShowMaterialGrid,
                 checkerboardRasterCacheImages: config.checkerboardRasterCacheImages,
                 debugShowCheckedModeBanner: false,
-                title: 'ADB工具箱',
+                title: 'ADB Toolkit',
                 navigatorKey: Global.instance!.navigatorKey,
                 themeMode: ThemeMode.light,
                 localizationsDelegates: const [
@@ -96,7 +96,7 @@ class _MaterialAppWrapperState extends State<MaterialAppWrapper> with WidgetsBin
                   GlobalCupertinoLocalizations.delegate,
                 ],
                 // ignore: deprecated_member_use
-                locale: window.locale,
+                locale: config.locale ?? window.locale,
                 supportedLocales: S.delegate.supportedLocales,
                 theme: ThemeData(
                   primarySwatch: Colors.blue,

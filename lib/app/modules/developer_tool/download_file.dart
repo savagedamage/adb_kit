@@ -36,7 +36,7 @@ class _DownloadFileState extends State<DownloadFile>
         centerTitle: true,
         elevation: 0.0,
         title: Text(
-          '下载文件',
+          'Download File',
           style: TextStyle(
             height: 1.0,
             color: Theme.of(context).textTheme.bodyMedium!.color,
@@ -64,7 +64,7 @@ class _DownloadFileState extends State<DownloadFile>
                     child: Column(
                       children: [
                          Text(
-                          '设备文件路径',
+                          'Device File Path',
                           style: TextStyle(
                             fontWeight: bold,
                           ),
@@ -94,12 +94,12 @@ class _DownloadFileState extends State<DownloadFile>
                                         .text!;
                                 devicesFilePathCTL.text = text;
                               },
-                              child: const Text('粘贴'),
+                              child: const Text('Paste'),
                             )
                           ],
                         ),
                          Text(
-                          '下载到的路径',
+                          'Download Destination',
                           style: TextStyle(
                             fontWeight: bold,
                           ),
@@ -129,7 +129,7 @@ class _DownloadFileState extends State<DownloadFile>
                                         .text!;
                                 localFilePathCTL.text = text;
                               },
-                              child: const Text('粘贴'),
+                              child: const Text('Paste'),
                             )
                           ],
                         ),

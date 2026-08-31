@@ -168,7 +168,7 @@ class _OverviewPageState extends State<OverviewPage> {
                         children: [
                           const ItemHeader(color: CandyColors.deepPurple),
                           Text(
-                            '加入反馈群',
+                            'Join the feedback group',
                             style: TextStyle(
                               fontSize: 16.w,
                               fontWeight: bold,
@@ -189,7 +189,7 @@ class _OverviewPageState extends State<OverviewPage> {
                           children: [
                             Expanded(
                               child: Text(
-                                '与群里其他大佬交流，第一时间获得更新动态，联系开发者',
+                                'Chat with other users, get updates first, and contact the developer.',
                                 style: TextStyle(
                                   color: Theme.of(context).primaryColor,
                                   fontSize: 12.w,
@@ -202,7 +202,7 @@ class _OverviewPageState extends State<OverviewPage> {
                                 if (await canLaunchUrlString(url)) {
                                   await launchUrlString(url);
                                 } else {
-                                  showToast('唤起QQ失败，请检查是否安装。');
+                                  showToast('Failed to open QQ. Please check whether it is installed.');
                                   // throw 'Could not launch $url';
                                 }
                               },
@@ -330,10 +330,10 @@ class _OverviewPageState extends State<OverviewPage> {
                               ),
                               onTap: () async {
                                 if (editingController.text.isEmpty) {
-                                  showToast('IP不可为空');
+                                  showToast('IP cannot be empty');
                                   return;
                                 }
-                                Log.d('adb 连接开始 ${editingController.text}');
+                                Log.d('ADB connection start ${editingController.text}');
                                 AdbResult? result;
                                 try {
                                   result = await AdbUtil.connectDevices(editingController.text);
@@ -352,7 +352,7 @@ class _OverviewPageState extends State<OverviewPage> {
                                   Log.e(e);
                                   showToast(e.message!);
                                 }
-                                Log.d('adb 连接结束 $result');
+                                Log.d('ADB connection finished $result');
                               },
                             ),
                           ),
@@ -416,7 +416,7 @@ class _OverviewPageState extends State<OverviewPage> {
           text: uri,
         ));
         setState(() {});
-        showToast('已复制到剪切板');
+        showToast('Copied to clipboard');
       },
       borderRadius: BorderRadius.circular(12.w),
       child: SizedBox(

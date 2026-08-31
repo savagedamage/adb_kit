@@ -182,7 +182,7 @@ class _DashboardState extends State<Dashboard> with WindowListener {
                     children: [
                       const ItemHeader(color: CandyColors.candyCyan),
                       Text(
-                        '屏幕截图',
+                        'Screenshot',
                         style: TextStyle(
                           fontWeight: bold,
                           height: 1.0,
@@ -346,7 +346,7 @@ class _DashboardState extends State<Dashboard> with WindowListener {
                   SizedBox(
                     height: 200.w,
                     child: DropTargetContainer(
-                      title: '${GetPlatform.isDesktop ? '拖放到此或' : ''}${S.of(context).pushTips}',
+                      title: '${GetPlatform.isDesktop ? 'Drop here or ' : ''}${S.of(context).pushTips}',
                       onTap: () async {
                         if (GetPlatform.isAndroid) {
                           if (!await PermissionUtil.requestStorage()) {
@@ -454,7 +454,7 @@ class _DashboardState extends State<Dashboard> with WindowListener {
                   SizedBox(
                     height: 200.w,
                     child: DropTargetContainer(
-                      title: '${GetPlatform.isDesktop ? '拖放到此或' : ''}${S.of(context).pushTips}',
+                      title: '${GetPlatform.isDesktop ? 'Drop here or ' : ''}${S.of(context).pushTips}',
                       onTap: () async {
                         if (GetPlatform.isAndroid) {
                           if (!await PermissionUtil.requestStorage()) {

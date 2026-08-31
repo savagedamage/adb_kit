@@ -34,7 +34,7 @@ class _AdbInstallPageState extends State<AdbInstallPage> {
         centerTitle: true,
         elevation: 0.0,
         title: Text(
-          '未找到Adb',
+          'ADB Not Found',
           style: TextStyle(
             height: 1.0,
             color: Theme.of(context).textTheme.bodyMedium!.color,
@@ -147,7 +147,7 @@ class _DownloadFileState extends State<_DownloadFile> {
           child: Column(
             children: [
               Text(
-                '下载 $downloadName 中',
+                'Downloading $downloadName',
                 style: TextStyle(
                   fontSize: 18.w,
                   fontWeight: bold,
@@ -156,7 +156,7 @@ class _DownloadFileState extends State<_DownloadFile> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  '进度',
+                  'Progress',
                   style: TextStyle(
                     fontWeight: bold,
                   ),
@@ -173,7 +173,7 @@ class _DownloadFileState extends State<_DownloadFile> {
               ),
               SizedBox(
                 child: Text(
-                  '下载到的目录为 $filesPath',
+                  'Downloaded to $filesPath',
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: Dimens.font_sp12,

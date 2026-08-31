@@ -76,7 +76,7 @@ class _DropTargetContainerState extends State<DropTargetContainer> {
                         color: AppColors.fontColor,
                       ),
                       child: Text(
-                        '释放执行操作',
+                        'Release to perform the action',
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontWeight: bold,

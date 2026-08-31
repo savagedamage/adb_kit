@@ -59,7 +59,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动Sula',
+                    'Launch Sula',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,
@@ -83,7 +83,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动黑域',
+                    'Launch Brevent',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,
@@ -106,7 +106,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动scene',
+                    'Launch Scene',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,
@@ -130,7 +130,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动shizuku',
+                    'Launch Shizuku',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,
@@ -153,7 +153,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动小黑屋',
+                    'Launch Hail',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,
@@ -176,7 +176,7 @@ class _AppStarterState extends State<AppStarter> {
                     vertical: 8.w,
                   ),
                   child: Text(
-                    '启动冰箱',
+                    'Launch Ice Box',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16.w,

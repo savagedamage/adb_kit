@@ -87,7 +87,7 @@ class _DevicesItemState extends State<DevicesItem> with TickerProviderStateMixin
       borderRadius: BorderRadius.circular(Dimens.gap_dp8),
       onTap: () async {
         if (!widget.devicesEntity!.isConnect) {
-          showToast('设备未正常连接');
+          showToast('Device is not connected properly');
           return;
         }
         AdbUtil.stopPoolingListDevices();
@@ -96,7 +96,7 @@ class _DevicesItemState extends State<DevicesItem> with TickerProviderStateMixin
           DeveloperTool(
             entity: widget.devicesEntity,
           ),
-          title: '开发者工具',
+          title: 'Developer Tools',
         );
         AdbUtil.startPoolingListDevices();
       },
@@ -164,7 +164,7 @@ class _DevicesItemState extends State<DevicesItem> with TickerProviderStateMixin
                     children: [
                       if (isAddress(widget.devicesEntity!.serial))
                         IconButton(
-                          tooltip: '断开连接',
+                          tooltip: 'Disconnect',
                           icon: Icon(
                             Icons.clear,
                             size: 24.w,
@@ -182,7 +182,7 @@ class _DevicesItemState extends State<DevicesItem> with TickerProviderStateMixin
                         ),
                       if (!widget.devicesEntity!.isConnect)
                         IconButton(
-                          tooltip: '重新连接',
+                          tooltip: 'Reconnect',
                           icon: Icon(
                             Icons.refresh,
                             size: 24.w,
@@ -202,7 +202,7 @@ class _DevicesItemState extends State<DevicesItem> with TickerProviderStateMixin
                         ),
                         onPressed: () async {
                           if (!widget.devicesEntity!.isConnect) {
-                            showToast('设备未正常连接');
+                            showToast('Device is not connected properly');
                             return;
                           }
                           AdbUtil.stopPoolingListDevices();
